@@ -1,0 +1,12 @@
+# NOTICE
+
+`servers.js` derives from `@code-yeongyu/lsp-tools-mcp`, MIT licensed.
+
+- Source: https://github.com/code-yeongyu/lsp-tools-mcp
+- Copyright (c) code-yeongyu
+- Tables copied: `BUILTIN_SERVERS`, `LSP_INSTALL_HINTS`, `LSP_LOCAL_INSTALL_HINTS`
+
+The tables were reformatted into one object per server. The commands and
+extensions are unchanged.
+
+The MIT license text is in `LICENSE`.

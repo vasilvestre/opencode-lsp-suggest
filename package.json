@@ -1,0 +1,45 @@
+{
+  "name": "@vasilvestre/opencode-lsp-suggest",
+  "version": "0.1.0",
+  "description": "Suggest installing a missing language server when the agent opens a file, and stay quiet when OpenCode already runs one.",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "lsp",
+    "language-server"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "vasilvestre",
+    "url": "https://github.com/vasilvestre"
+  },
+  "homepage": "https://github.com/vasilvestre/opencode-lsp-suggest",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasilvestre/opencode-lsp-suggest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vasilvestre/opencode-lsp-suggest/issues"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "servers.js",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "test": "node --test index.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
