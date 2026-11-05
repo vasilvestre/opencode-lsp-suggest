@@ -30,6 +30,12 @@ jobs:
         run: |
           echo "Version ${{ steps.local.outputs.version }} is already on npm, nothing to do."
           exit 0
-      - run: npm test
-      - run: npm run build --if-present
-      - run: npm publish --provenance --access public
+      - name: Test
+        if: steps.local.outputs.version != steps.published.outputs.version
+        run: npm test
+      - name: Build
+        if: steps.local.outputs.version != steps.published.outputs.version
+        run: npm run build --if-present
+      - name: Publish
+        if: steps.local.outputs.version != steps.published.outputs.version
+        run: npm publish --provenance --access public
